@@ -17,35 +17,4 @@ This repository covers all the core pillars of OOPs — Encapsulation, Inheritan
 
 ---
 
-## 🧩 Code Example (Abstraction)
 
-```java
-abstract class Vehicle {
-    abstract void start();
-    abstract void stop();
-
-    void fuelType() {
-        System.out.println("Most vehicles use fuel or electricity.");
-    }
-}
-
-class Car extends Vehicle {
-    @Override
-    void start() {
-        System.out.println("Car starts with a key or button.");
-    }
-
-    @Override
-    void stop() {
-        System.out.println("Car stops with brakes.");
-    }
-}
-
-public class AbstractionExample {
-    public static void main(String[] args) {
-        Vehicle car = new Car();
-        car.start();
-        car.fuelType();
-        car.stop();
-    }
-}
